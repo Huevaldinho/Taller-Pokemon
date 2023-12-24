@@ -1,11 +1,21 @@
 import { Router } from "express";
-//!TODO: Import model
-
+import Habilities from "../collections/Habilities.collection";
 const router = Router();
 
 //Gets all 
 router.get('/', async (req, res) => {
-    res.status(200).json("message: 'Habilities route'");
+    const allHabilities = await Habilities.find({}).lean().exec();
+    res.status(200).json(allHabilities); 
+});
+
+//Create hability
+router.post('/', async (req, res) => {
+    const newHability = await Habilities.create({
+        id:req.body.id,
+        name: req.body.name,
+        description: req.body.description,
+    });
+    res.status(201).json(newHability);
 });
 
 export default router;

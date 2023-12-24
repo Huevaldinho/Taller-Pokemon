@@ -1,4 +1,4 @@
-//import mongoose from 'mongoose';
+import mongoose from 'mongoose';
 import express from 'express';
 
 // Routes
@@ -24,11 +24,11 @@ app.use('/pokemon', PokemonRouter);
 //     }
 // }
 
-//const connectionString: string = 'mongodb+srv://andres:mw8kLh4poNctWDOT@examplecluster.f37kgcv.mongodb.net/People';
+const connectionString: string = 'mongodb+srv://huevaldinho:Ijx6zDA4byHXPJLc@cluster0.ztbjbhd.mongodb.net/EjemploIntroWEB';
 
 
 const main = async () => {
-    //await mongoose.connect(connectionString);
+    await mongoose.connect(connectionString);
     app.listen(port, () => {
         console.log(`La aplicación está escuchando en el puerto ${port}`);
     });
