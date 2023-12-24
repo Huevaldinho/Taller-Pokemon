@@ -1,0 +1,19 @@
+{
+  "name": "pokemon",
+  "version": "1.0.0",
+  "description": "Taller del Curso Introducción al Desarrollo Web\r Estudiantes:\r - Felipe Obando\r - Pablo Arias",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Huevaldinho/Taller-Pokemon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Huevaldinho/Taller-Pokemon/issues"
+  },
+  "homepage": "https://github.com/Huevaldinho/Taller-Pokemon#readme"
+}
