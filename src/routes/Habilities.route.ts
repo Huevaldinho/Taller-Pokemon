@@ -11,7 +11,6 @@ router.get('/', async (req, res) => {
 //Create hability
 router.post('/', async (req, res) => {
     const newHability = await Habilities.create({
-        id:req.body.id,
         name: req.body.name,
         description: req.body.description,
     });

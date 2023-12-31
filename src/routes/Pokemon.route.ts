@@ -9,25 +9,20 @@ const router = Router();
 //Get all pokemons
 router.get('/', async (req, res) => {
     const allPokemons = await Pokemon.find({}).lean().exec();
-    console.log("Get all pokemons");
     res.status(200).json(allPokemons); 
 });
 
 // Get pokemon by pokedexNumber
 router.get('/pokedex', async (req, res) => {
     const pokedexNumber = req.query.pokedexNumber;
-    console.log("Get pokemon by pokedexNumber:", pokedexNumber);
-
     const pokemon = await Pokemon.findOne({ pokedexNumber }).lean().exec();
     if (!pokemon) return res.status(404).json({ message: `Pokemon with pokedexNumber=${pokedexNumber} not found` });
-
     res.status(200).json(pokemon);
 });
 
 // Get pokemon by name
 router.get('/name', async (req, res) => {
     const name = req.query.name;
-    console.log("Get pokemon by name:", name);
     const pokemon = await Pokemon.findOne({ name }).lean().exec();
     if (!pokemon) return res.status(404).json({ message: `Pokemon with name=${name} not found` });
     res.status(200).json(pokemon);
@@ -51,13 +46,13 @@ router.post('/', async (req, res) => {
     //*Validar por tipo
     if (!req.body.primaryType) return res.status(400).json({ message: `All pokemons must have a primaryType` });
     //*Validar habilidades
-    if (!req.body.habilities) return res.status(400).json({ message: `habilities is required in the body.` });
-    const habilities : number[] = req.body.habilities;
+    if (!req.body.habilities) return res.status(400).json({ message: `habilities are required in the body.` });
+    const habilities : string[] = req.body.habilities;
     if (habilities.length == 0) return res.status(400).json({ message: `all pokemons must have at least one ability in the body` });
     for (let i = 0; i < habilities.length; i++) {
-        const habilitie : number = habilities[i];
-        const habilitieExists = await Habilities.findOne({ id: habilitie }).lean().exec();
-        if (!habilitieExists) return res.status(400).json({ message: `Ability with id=${habilitie} not found` });
+        let ability : string = habilities[i];
+        let abilityExists = await Habilities.findOne({ _id: ability }).lean().exec();
+        if (!abilityExists) return res.status(400).json({ message: `Ability with id=${ability} not found` });
     }
     //description required in mongo
     !req.body.description ? req.body.description = "-" : req.body.description = req.body.description;
