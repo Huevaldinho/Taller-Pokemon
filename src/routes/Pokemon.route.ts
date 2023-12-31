@@ -30,8 +30,6 @@ router.get('/name', async (req, res) => {
 
 //Create pokemon
 router.post('/', async (req, res) => {
-    //!TODO: Mover toda esta logica a otros endpoints, usar next() para pasar al siguiente middleware
-
     let pokedexNumber:number = req.body.pokedexNumber;
     if (pokedexNumber   < 1) return res.status(400).json({ message: `pokedexNumber must be >= 1` }); 
     let name:string = req.body.name;
