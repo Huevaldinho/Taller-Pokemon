@@ -1,0 +1,93 @@
+[{
+  "name": "Cromolente",
+  "description": "Aumenta la precisión del Pokémon y la de sus aliados."
+},
+{
+  "name": "Cuerpo Puro",
+  "description": "El Pokémon está protegido de problemas de estado."
+},
+{
+  "name": "Potencia Bruta",
+  "description": "Aumenta la potencia de los movimientos físicos."
+},
+{
+  "name": "Impulso Gigante",
+  "description": "Aumenta la Velocidad del Pokémon tras derrotar a un oponente."
+},
+{
+  "name": "Cromofuerza",
+  "description": "Aumenta la potencia de los movimientos de tipo Psíquico."
+},
+{
+  "name": "Poder Solar",
+  "description": "El Pokémon restaura PS al recibir luz solar intensa o luz solar."
+},
+{
+  "name": "Fuga",
+  "description": "Permite escapar del combate sin fallar."
+},
+{
+  "name": "Pies Rápidos",
+  "description": "Aumenta la Velocidad del Pokémon cuando le afecta un cambio de estado."
+},
+{
+  "name": "Electricidad Estática",
+  "description": "Puede paralizar a los Pokémon que tocan al Pokémon en combate por contacto físico."
+},
+{
+  "name": "Piel Toxica",
+  "description": "Protege al Pokémon de los problemas de estado si es atacado por un movimiento de contacto."
+},
+{
+  "name": "Liviano",
+  "description": "Aumenta la Velocidad del Pokémon cuando hay tormenta de arena o granizo."
+},
+{
+  "name": "Levitón",
+  "description": "Protege al Pokémon de los movimientos en los que el objetivo agarra al atacante."
+},
+{
+  "name": "Filtro",
+  "description": "Reduce el daño de los supereficaces."
+},
+{
+  "name": "Nado Rápido",
+  "description": "Aumenta la Velocidad del Pokémon cuando hay tormenta de lluvia."
+},
+{
+  "name": "Despiste",
+  "description": "Puede confundir al oponente al hacer contacto físico."
+},
+{
+  "name": "Gran Encanto",
+  "description": "Aumenta la probabilidad de que los Pokémon salvajes sean de género contrario al del Pokémon dotado con esta habilidad."
+},
+{
+  "name": "Velo Arena",
+  "description": "El Pokémon y sus aliados están protegidos de movimientos de tipo Prioridad."
+},
+{
+  "name": "Piel Seca",
+  "description": "El Pokémon recupera PS bajo la lluvia y la granizada."
+},
+{
+  "name": "Experto",
+  "description": "Aumenta el poder de los movimientos de tipo Normal."
+},
+{
+  "name": "Despiste",
+  "description": "Puede confundir al oponente al hacer contacto físico."
+},
+{
+  "name": "Vista Lince",
+  "description": "Aumenta la precisión del Pokémon."
+},
+{
+  "name": "Cuerpo Frágil",
+  "description": "Aumenta la Velocidad del Pokémon cuando le afecta un cambio de estado."
+},
+{
+  "name": "Ojo Compuesto",
+  "description": "Aumenta la precisión del Pokémon y la de sus aliados."
+}
+]

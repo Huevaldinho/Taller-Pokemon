@@ -1,0 +1,82 @@
+[
+  {
+    "pokedexNumber": 25,
+    "name": "Pikachu",
+    "habilities": ["6590d4226cbe108c19527ad7", "6590d4226cbe108c19527ad8"],
+    "description": "When several of these Pokémon gather, their electricity could build and cause lightning storms.",
+    "primaryType": "Electric",
+    "secondaryType": null
+  },
+  {
+    "pokedexNumber": 39,
+    "name": "Jigglypuff",
+    "habilities": ["6590d4226cbe108c19527ad9", "6590d4226cbe108c19527ada"],
+    "description": "Recordings of Jigglypuff's strange lullabies can be purchased from department stores.",
+    "primaryType": "Normal",
+    "secondaryType": "Fairy"
+  },
+  {
+    "pokedexNumber": 52,
+    "name": "Meowth",
+    "habilities": ["6590d4226cbe108c19527adb", "6590d4226cbe108c19527adc"],
+    "description": "Adores round objects. It wanders the streets on a nightly basis to look for dropped loose change.",
+    "primaryType": "Normal",
+    "secondaryType": null
+  },
+  {
+    "pokedexNumber": 63,
+    "name": "Abra",
+    "habilities": ["6590d4226cbe108c19527add", "6590d4226cbe108c19527ade"],
+    "description": "Using its ability to read minds, it will identify impending danger and teleport to safety.",
+    "primaryType": "Psychic",
+    "secondaryType": null
+  },
+  {
+    "pokedexNumber": 77,
+    "name": "Ponyta",
+    "habilities": ["6590d4226cbe108c19527adf", "6590d4226cbe108c19527ae0"],
+    "description": "It is a weak runner immediately after birth. It gradually becomes faster by chasing after its parents.",
+    "primaryType": "Fire",
+    "secondaryType": null
+  },
+  {
+    "pokedexNumber": 94,
+    "name": "Gengar",
+    "habilities": ["6590d4226cbe108c19527ae1", "6590d4226cbe108c19527ae2"],
+    "description": "On the night of a full moon, if shadows move on their own and laugh, it must be Gengar's doing.",
+    "primaryType": "Ghost",
+    "secondaryType": "Poison"
+  },
+  {
+    "pokedexNumber": 116,
+    "name": "Horsea",
+    "habilities": ["6590d4226cbe108c19527ae3", "6590d4226cbe108c19527ae4"],
+    "description": "Known to shoot down flying bugs with precision blasts of ink from the surface of the water.",
+    "primaryType": "Water",
+    "secondaryType": null
+  },
+  {
+    "pokedexNumber": 133,
+    "name": "Eevee",
+    "habilities": ["6590d4226cbe108c19527ae5", "6590d4226cbe108c19527ae6"],
+    "description": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element Stones.",
+    "primaryType": "Normal",
+    "secondaryType": null
+  },
+  {
+    "pokedexNumber": 147,
+    "name": "Dratini",
+    "habilities": ["6590d4226cbe108c19527ae7", "6590d4226cbe108c19527ae8"],
+    "description": "It is called the \"Mirage Pokémon\" because so few have seen it. Its shed skin has been found.",
+    "primaryType": "Dragon",
+    "secondaryType": null
+  },
+  {
+    "pokedexNumber": 151,
+    "name": "Mew",
+    "habilities": ["6590d4226cbe108c19527ae9", "6590d4226cbe108c19527aea"],
+    "description": "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide.",
+    "primaryType": "Psychic",
+    "secondaryType": null
+  }
+]
