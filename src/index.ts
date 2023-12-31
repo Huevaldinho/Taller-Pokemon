@@ -12,9 +12,9 @@ const app = express();
 const port = 3000;
 const jwt = require('jsonwebtoken');
 
-app.use(express.json()); // <- Esta linea permite que se accese el body
+app.use(express.json()); 
 
-app.use('/habilities', authenticateToken, HabilitiesRouter);
+app.use('/habilities', authenticateToken,  HabilitiesRouter);
 app.use('/pokemon', authenticateToken, PokemonRouter);
 app.use('/users', UserRouter)
 
@@ -41,11 +41,33 @@ function authenticateToken (req: any, res: Response, next: NextFunction){
 }
 //---------------------------------------------------------------------------------------------------------------
 
-//-------------------------------------------------------------------------------------------------------------------
+function refreshTokenMiddleware(req: any, res: Response, next: NextFunction) {
+    const authHeader = req.headers['authorization'];
+    const refreshToken = authHeader && authHeader.split(' ')[1];
+  
+    if (!refreshToken) {
+      return res.sendStatus(401);
+    }
+  
+    // Verificar el refreshToken
+    jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET as string, (err: any, user: any) => {
+      if (err) {
+        return res.sendStatus(403);
+      }
+  
+      // Generar un nuevo accessToken
+      const newAccessToken = jwt.sign({ name: user.name }, process.env.ACCESS_TOKEN_SECRET as string, { expiresIn: '10s' });
+  
+      // Envía el nuevo accessToken en la respuesta
+      res.setHeader('Authorization', `Bearer ${newAccessToken}`);
+      next();
+    });
+  }
+  
 
+//---------------------------------------------------------------------------------------------------------------
 
 const connectionString: string = 'mongodb+srv://huevaldinho:Ijx6zDA4byHXPJLc@cluster0.ztbjbhd.mongodb.net/EjemploIntroWEB';
-
 
 const main = async () => {
     await mongoose.connect(connectionString);

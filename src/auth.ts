@@ -48,7 +48,7 @@ app.post('/login', async (req: Request, res: Response) => {
 
       const accessToken = generateAccessToken(userAuth);
       const refreshToken = jwt.sign(userAuth, process.env.REFRESH_TOKEN_SECRET as string);
-      res.json({ accessToken: accessToken, refreshToken: refreshToken });
+      res.status(200).json({accessToken: accessToken, refreshToken: refreshToken});
     } else {
       res.status(401).json({ message: "User login failed" });
     }

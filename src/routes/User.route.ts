@@ -1,4 +1,4 @@
-import { Router, Request, Response, NextFunction } from "express";
+import { Router } from "express";
 import UserModel from "../collections/User.collection"
 
 const router = Router();
@@ -86,10 +86,12 @@ router.put('/:username', async (req, res) => {
             return res.status(400).json({ error: "The 'newUsername' already exists" });
         }
 
+        //encryptation
+        const hashedPassword = await bcrypt.hash(req.body.newPassword, 10)
         // Perform the update if the user exists
         await UserModel.updateOne(
             { username: req.params.username },
-            { $set: { username: req.body.newUsername, password: req.body.newPassword } }
+            { $set: { username: req.body.newUsername, password: hashedPassword } }
         );
 
         res.status(202).json({ message: "User updated successfully" });
