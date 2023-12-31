@@ -1,0 +1,5 @@
+Estudiantes:
+Felipe Obando y Pablo Arias
+
+repo: https://github.com/Huevaldinho/Taller-Pokemon.git
+
